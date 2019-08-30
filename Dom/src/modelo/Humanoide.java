@@ -12,8 +12,4 @@ public class Humanoide extends Demonio {
 		}
 	}
 
-	private boolean estoyMuerto() {
-		return getHP() <= 0;
-	}
-
 }

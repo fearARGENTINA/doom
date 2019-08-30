@@ -1,5 +1,6 @@
 package modelo;
 
+import java.util.Collection;
 import java.util.List;
 
 public class Nivel {
@@ -14,5 +15,9 @@ public class Nivel {
 			}
 		}
 		return demonioMasDuro;
+	}
+	
+	public void limpiar() {
+		demonios.removeIf(demonio -> demonio.estoyMuerto());
 	}
 }

@@ -16,4 +16,8 @@ public abstract class Demonio {
 		hp -= danio;
 	}
 
+	public Boolean estoyMuerto() {
+		return hp <= 0;
+	}
+
 }
