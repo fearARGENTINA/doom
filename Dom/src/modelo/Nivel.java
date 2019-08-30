@@ -20,4 +20,8 @@ public class Nivel {
 	public void limpiar() {
 		demonios.removeIf(demonio -> demonio.estoyMuerto());
 	}
+	
+	public boolean estaCompletado() {
+		return demonios.stream().allMatch(demonio -> demonio.estoyMuerto());
+	}
 }
