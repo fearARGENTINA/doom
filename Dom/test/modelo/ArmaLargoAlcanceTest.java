@@ -37,4 +37,18 @@ public class ArmaLargoAlcanceTest {
 		
 		verify(marineMock).usarCartucho();
 	}
+	
+	@Test
+	public void recargar_marineSinCartuchosNoRecargaSusMuniciones() {
+		Marine marineMock = mock(Marine.class);
+		when(marineMock.tieneCartuchos()).thenReturn(false);
+		
+		ArmaLargoAlcance arma = new ArmaLargoAlcance();
+		arma.setMuniciones(10);
+		arma.recargar(marineMock);
+		
+		Assert.assertEquals(10, arma.getMuniciones());
+		
+		verify(marineMock, Mockito.times(0)).usarCartucho();
+	}
 }
