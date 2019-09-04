@@ -51,4 +51,18 @@ public class ArmaLargoAlcanceTest {
 		
 		verify(marineMock, Mockito.times(0)).usarCartucho();
 	}
+	
+	@Test
+	public void disparar_alDispararADemonioDisminuirMuniciones() {
+		Demonio demonioMock = mock(Sucubo.class);
+		ArmaLargoAlcance arma = new ArmaLargoAlcance();
+		arma.setMunicionesPorSegundo(3);
+		
+		int distanciaAlObjetivo = 100;
+		arma.disparar(demonioMock, distanciaAlObjetivo);
+		
+		Assert.assertEquals(distanciaAlObjetivo-3, arma.getMuniciones());
+		
+		verify(demonioMock).bajarHP(arma.getDanio(distanciaAlObjetivo));
+	}
 }
