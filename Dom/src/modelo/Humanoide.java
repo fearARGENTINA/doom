@@ -2,6 +2,7 @@ package modelo;
 
 public class Humanoide extends Demonio {
 
+	private static final int DISTANCIA_MAXIMA = 1000;
 	private ArmaLargoAlcance arma;
 	
 	@Override
@@ -11,5 +12,12 @@ public class Humanoide extends Demonio {
 			marine.recibirRegalos(arma);
 		}
 	}
+
+	@Override
+	int getDanio() {
+		return arma.getDanio(DISTANCIA_MAXIMA);
+	}
+	
+	
 
 }

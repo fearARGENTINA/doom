@@ -24,4 +24,14 @@ public class Nivel {
 	public boolean estaCompletado() {
 		return demonios.stream().allMatch(demonio -> demonio.estoyMuerto());
 	}
+	
+	public Demonio demonioMasPeligroso() {
+		Demonio demonioMasDuro = demonios.get(0);
+		for (Demonio demonio : demonios) {
+			if (demonio.getDanio() > demonioMasDuro.getDanio()) {
+				demonioMasDuro = demonio;
+			}
+		}
+		return demonioMasDuro;
+	}
 }
