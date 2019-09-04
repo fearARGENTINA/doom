@@ -32,4 +32,16 @@ public class ArmaLargoAlcance extends Arma {
 		super.disparar(demonio, distanciaAlObjetivo);
 		municiones -= municionesPorSegundo;
 	}
+
+	public int getMuniciones() {
+		return municiones;
+	}
+
+	public void setMuniciones(int municiones) {
+		this.municiones = municiones;
+	}
+
+	public void setMunicionesPorSegundo(int municionesPorSegundo) {
+		this.municionesPorSegundo = municionesPorSegundo;
+	}
 }

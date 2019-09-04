@@ -6,6 +6,7 @@ public class Marine {
 	private List<Arma> inventario;
 	private Arma armaSeleccionada;
 	private int cartuchos = 0;
+	private int puntos = 0;
 	
 	public void equipaArma(int atajo) {
 		armaSeleccionada = obtenerArma(atajo);
@@ -35,11 +36,23 @@ public class Marine {
 		return armaSeleccionada;
 	}
 
+	public void setArmaSeleccionada(Arma armaSeleccionada) {
+		this.armaSeleccionada = armaSeleccionada;
+	}
+
 	public void recibirRegalos(ArmaLargoAlcance arma) {
 		cartuchos++;
 		if (!inventario.contains(arma)) {
 			inventario.add(arma);
 		}
+	}
+
+	public int getPuntos() {
+		return puntos;
+	}
+
+	public void recibirPuntos(int puntosARecibir) {
+		puntos += puntosARecibir;
 	}
 	
 	

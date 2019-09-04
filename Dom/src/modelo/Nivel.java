@@ -10,7 +10,7 @@ public class Nivel {
 	public Demonio demonioMasDuro() {
 		Demonio demonioMasDuro = demonios.get(0);
 		for (Demonio demonio : demonios) {
-			if (demonio.getHP() > demonioMasDuro.getHP()) {
+			if (demonio.getHp() > demonioMasDuro.getHp()) {
 				demonioMasDuro = demonio;
 			}
 		}
