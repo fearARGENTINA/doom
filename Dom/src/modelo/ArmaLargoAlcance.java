@@ -44,4 +44,9 @@ public class ArmaLargoAlcance extends Arma {
 	public void setMunicionesPorSegundo(int municionesPorSegundo) {
 		this.municionesPorSegundo = municionesPorSegundo;
 	}
+	
+	@Override
+	public boolean puedeAtacarGroso() {
+		return true;
+	}
 }

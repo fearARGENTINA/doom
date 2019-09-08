@@ -15,5 +15,8 @@ public abstract class Arma {
 	public boolean puedeAtacarJefe() {
 		return false;
 	}
-
+	
+	public boolean puedeAtacarGroso() {
+		return false;
+	}
 }

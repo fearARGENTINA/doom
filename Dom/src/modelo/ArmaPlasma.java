@@ -19,5 +19,9 @@ public class ArmaPlasma extends Arma {
 	public boolean puedeAtacarJefe() {
 		return true;
 	}
-
+	
+	@Override
+	public boolean puedeAtacarGroso() {
+		return true;
+	}
 }
