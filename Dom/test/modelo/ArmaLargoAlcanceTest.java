@@ -2,7 +2,6 @@ package modelo;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
