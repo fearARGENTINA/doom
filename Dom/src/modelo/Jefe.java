@@ -30,13 +30,4 @@ public class Jefe extends Demonio {
 		}
 		return armaMasPotente.getDanio(MAXIMA_DISTANCIA);
 	}
-
-	@Override
-	boolean esGroso() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-	
-	
 }

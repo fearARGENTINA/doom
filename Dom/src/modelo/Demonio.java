@@ -33,5 +33,7 @@ public abstract class Demonio {
 
 	abstract int getDanio();
 	
-	abstract boolean esGroso();
+	public boolean esGroso() {
+		return false;
+	}
 }

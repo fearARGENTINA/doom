@@ -8,10 +8,7 @@ public class Groso extends Demonio {
 	}
 
 	@Override
-	boolean esGroso() {
-		// TODO Auto-generated method stub
+	public boolean esGroso() {
 		return true;
 	}
-	
-	
 }
