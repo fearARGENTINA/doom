@@ -17,4 +17,10 @@ public class Sucubo extends Demonio {
 	public int puntosADar(int distanciaAMi) {
 		return 10 * distanciaAMi;
 	}
+
+	@Override
+	boolean esGroso() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

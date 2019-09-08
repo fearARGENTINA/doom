@@ -32,4 +32,6 @@ public abstract class Demonio {
 	}
 
 	abstract int getDanio();
+	
+	abstract boolean esGroso();
 }

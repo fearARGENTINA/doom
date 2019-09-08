@@ -17,6 +17,12 @@ public class Humanoide extends Demonio {
 	int getDanio() {
 		return arma.getDanio(DISTANCIA_MAXIMA);
 	}
+
+	@Override
+	boolean esGroso() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 
