@@ -11,4 +11,11 @@ public class Groso extends Demonio {
 	public boolean esGroso() {
 		return true;
 	}
+	
+	@Override
+	public void serAtacadoPor(Marine marine, int distanciaAMi) {
+		if (marine.getArmaSeleccionada().puedeAtacarGroso()) {
+			marine.getArmaSeleccionada().disparar(this, distanciaAMi);
+		}
+	}
 }
