@@ -17,4 +17,8 @@ public class Humanoide extends Demonio {
 	int getDanio() {
 		return arma.getDanio(DISTANCIA_MAXIMA);
 	}
+	@Override
+	public int puntosADar(int distanciaAMi) {
+		return 50;
+	}
 }
