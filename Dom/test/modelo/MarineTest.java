@@ -37,5 +37,20 @@ public class MarineTest {
 		
 		Assert.assertEquals(90, groso.getHp());
 	}
+	
+	@Test
+	public void atacarA_DemonioGrosoConArmaPlasmaYDisminuyeHPALaMitad() {
+		Marine marine = new Marine();
+		
+		ArmaPlasma arma = new ArmaPlasma();
+		marine.setArmaSeleccionada(arma);
+		
+		Groso groso = new Groso();
+		groso.setHp(100);
+		
+		marine.atacarA(groso, 100);
+		
+		Assert.assertEquals(50, groso.getHp());
+	}
 
 }

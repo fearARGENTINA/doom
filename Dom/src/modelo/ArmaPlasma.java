@@ -10,9 +10,9 @@ public class ArmaPlasma extends Arma {
 	@Override
 	public void disparar(Demonio demonio, int distanciaAlObjetivo) {
 		if( demonio.esGroso() )
-			demonio.bajarHP(demonio.getHp());
-		else
 			demonio.bajarHP(demonio.getHp()/2);
+		else
+			demonio.bajarHP(demonio.getHp());
 	}
 	
 	@Override
