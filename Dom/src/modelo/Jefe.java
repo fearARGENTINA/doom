@@ -30,4 +30,9 @@ public class Jefe extends Demonio {
 		}
 		return armaMasPotente.getDanio(MAXIMA_DISTANCIA);
 	}
+	
+	@Override 
+	public int puntosADar(int distanciaAMi) {
+		return this.getHp();
+		}
 }
