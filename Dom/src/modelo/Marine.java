@@ -30,6 +30,9 @@ public class Marine {
 	
 	public void atacarA(Demonio demonio, int distanciaAlDemonio){
 		demonio.serAtacadoPor(this, distanciaAlDemonio);
+		if (demonio.estoyMuerto()){
+			puntos+=demonio.puntosADar(distanciaAlDemonio);
+		}
 	}
 
 	public Arma getArmaSeleccionada() {
